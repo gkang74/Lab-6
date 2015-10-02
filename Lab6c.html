@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> Lab 6c </title>
+<script src="scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+
+
+
+void setup(){
+
+				size( 500, 500 );
+				background(0,0,0);
+				frameRate( 30 );
+
+				
+}
+
+
+void draw()
+{
+	background(0,0,255);
+	fill(255,255,255);
+	rect(50,280,100,100);
+	fill(255,255,255);
+	rect(300,280,100,100);
+	fill(0,0,0);
+	text("Lab 6a",60,300);
+	fill(0,0,0);
+	text("Lab 6b",310,300);
+		if (mousePressed == true && mouseButton == LEFT)
+			{
+				if (mouseX > 50 && mouseX < 50+100 && mouseY > 280 && mouseY < 280+100)
+				{
+					link("lab6a.html");
+			
+				}
+			}
+		if (mousePressed == true && mouseButton == LEFT)
+			{
+				if (mouseX > 300 && mouseX < 300+100 && mouseY > 280 && mouseY < 280+100)
+				{
+					link("lab6b.html");
+			
+				}
+			}			
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+
